@@ -711,7 +711,8 @@ def main():
     interval_offline = 7200
 
 
-    selector_upgrade = input("Auto Upgrade level y/n  : ").strip().lower()
+    selector_upgrade = "y"  # Ganti otomatis ke "y" atau "n"
+print(f"Auto Upgrade level y/n  : {selector_upgrade}")
     while True:
         for index, query in enumerate(queries):
             parse = parse_query(query)
